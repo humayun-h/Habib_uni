@@ -1,0 +1,21 @@
+#initializing characters for points
+characters= {"dracula":0,"zombie":0,"werewolf":0,"vampire":0,"casper":0,"annabelle":0,"voldemort":0,"maleficent":0,"joker":0,"it":0,"ghost_rider":0,"medusa":0,"bellatrex":0,"scarlett_witch":0,"salazar":0,"bigfoot":0,"slanderman":0}
+
+#Function for first Question
+def Q_1(point_1):
+    if point_1==1:
+        characters["dracula"]=1
+    elif point_1==2:
+        characters["zombie"] = 1
+    elif point_1==3:
+        characters["vampire"] = 1
+    else:
+        pass
+    print(characters)
+
+#Main Quiz Function
+def Quiz():
+    point_1 = int(input("Are you superstitious?\n"+"press1:Quite alot\n"+"press2:A teensy bit\n"+"press3:Definitely not\n"))
+    Q_1(point_1)
+
+Quiz()
